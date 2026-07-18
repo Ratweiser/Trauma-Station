@@ -216,6 +216,23 @@
   restockAfterPurchase: 900 # 15 mins
 
 - type: listing
+  id: Mandate
+  name: ntr-executive-mandate-name
+  description: ntr-executive-mandate-desc
+  productEntity: SpawnPodMandate
+  icon:
+    sprite: _Trauma/Objects/Weapons/Melee/mandate_back_icon.rsi
+    state: icon-on
+  cost:
+    NTLoyaltyPoint: 45
+  categories:
+  - NTRpersonal
+  restockTime: 300 # 5 minutes
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
   id: NTRExecutiveCigar
   name: ntr-executive-cigar-name
   description: ntr-executive-cigar-desc

@@ -7,7 +7,7 @@
   description: A ceremonial weapon belonging to the nanotrasen representative of the station. Those who wield it are slowed by its immense mass.
   components:
   - type: Sprite
-    sprite: _Trauma/Objects/Weapons/Melee/mandate.back.icon.rsi
+    sprite: _Trauma/Objects/Weapons/Melee/mandate_back_icon.rsi
     layers:
     - state: icon-off
     - state: icon-on
@@ -19,9 +19,9 @@
     sprite: _Trauma/Objects/Weapons/Melee/mandate.rsi
     storedSprite:
       state: equipped-BACKPACK
-      sprite: _Trauma/Objects/Weapons/Melee/mandate.back.icon.rsi
+      sprite: _Trauma/Objects/Weapons/Melee/mandate_back_icon.rsi
   - type: Clothing
-    sprite: _Trauma/Objects/Weapons/Melee/mandate.back.icon.rsi
+    sprite: _Trauma/Objects/Weapons/Melee/mandate_back_icon.rsi
     slots:
     - Back
     clothingVisuals:

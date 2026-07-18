@@ -19,6 +19,15 @@
     prototype: NTRCrateSpesosSmall
 
 - type: entity
+  id: SpawnPodMandate
+  categories: [ HideSpawnMenu ]
+  name: SpawnSupplyMandate
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: Mandate
+
+- type: entity
   id: SpawnPodDisks
   categories: [ HideSpawnMenu ]
   name: SpawnSupplyPointDisks
