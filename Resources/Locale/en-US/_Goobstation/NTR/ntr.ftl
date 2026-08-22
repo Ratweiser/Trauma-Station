@@ -33,6 +33,9 @@ ntr-executive-pizza-small-desc = Order a small pizza party bundle from NanoTrase
 ntr-executive-softsuit-name = Order a softsuit
 ntr-executive-softsuit-desc = A basic softsuit designed for short-term space exposure. Offers minimal protection.
 
+ntr-executive-mandate-name = Mandate
+ntr-executive-mandate-desc = A large sword for commiting honorable executions against mindshielded people
+
 ntr-executive-hardsuit-name = Order a hardsuit
 ntr-executive-hardsuit-desc = A durable hardsuit for extreme environments. Are you sure this purchase is justified?
 
@@ -125,30 +128,3 @@ ntr-executive-tier-2-name = Response teams
 ntr-executive-tier-3-name = Personal
 ntr-executive-tier-4-name = Evil
 ntr-executive-tier-5-name = Rare machine boards
-
-# insert attempt in console
-ntr-console-insert-deny = Wrong!
-ntr-console-insert-accept = Correct!
-
-ntr-console-insert-deny-stamps = Invalid stamps.
-
-ntr-bounty-console-reward-label = Reward: [color=limegreen]{$reward} loyalty points[/color]
-ntr-bounty-console-manifest-entry =
-    { $amount ->
-        [1] {$item}
-        *[other] {$item} x{$amount}
-    }
-
-ntr-bounty-console-flavor-left = Bounties approved by Central Command. Bribes not included. Probably.
-
-ntr-console-task-fail-insert = Task failed.
-ntr-console-reagent-fail = Not enough reagents to complete the task!
-
-# experimental
-ntr-console-no-solution = Could not find solution {$solutionName} on the vial.
-ntr-console-missing-reagent = Vial is missing reagent {$reagent}.
-ntr-console-insufficient-reagent-debug = Insufficient reagent. Required: {$requiredReagent}, Found: {$actualReagent}. Required amount: {$required}, Actual amount: {$actual}.
-ntr-console-task-fail = Task failed to load.
-
-ntr-bounty-console-menu-title = NTR task console
-ntr-bounty-console-print-button = Accept

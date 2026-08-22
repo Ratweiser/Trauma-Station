@@ -9,6 +9,7 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Projectiles;
+using Content.Shared.Stunnable;
 using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Trauma.Common.Knowledge;
@@ -25,6 +26,18 @@ public abstract partial class SharedKnowledgeSystem
     [Dependency] protected SharedPopupSystem _popup = default!;
     [Dependency] private MovementSpeedModifierSystem _speed = default!;
     [Dependency] private EntityQuery<MartialArtsKnowledgeComponent> _artQuery = default!;
+
+    private void InitializeMartialArts()
+    {
+        SubscribeLocalEvent<KnowledgeHolderComponent, ShotAttemptedEvent>(RelayMartialArt);
+        SubscribeLocalEvent<KnowledgeHolderComponent, ComboAttackPerformedEvent>(RelayMartialArt);
+        SubscribeLocalEvent<KnowledgeHolderComponent, MeleeHitEvent>(RelayActiveEvent);
+        SubscribeLocalEvent<KnowledgeHolderComponent, CheckGrabOverridesEvent>(RelayMartialArt);
+        SubscribeLocalEvent<KnowledgeHolderComponent, RefreshMovementSpeedModifiersEvent>(RelayMartialArt);
+        SubscribeLocalEvent<KnowledgeHolderComponent, GetMeleeAttackRateEvent>(RelayActiveEvent);
+        SubscribeLocalEvent<KnowledgeHolderComponent, ProjectileReflectAttemptEvent>(RelayMartialArt);
+        SubscribeLocalEvent<KnowledgeHolderComponent, TryForceStandEvent>(RelayMartialArt);
+    }
 
     [SubscribeLocalEvent]
     private void OnMartialArtAdded(Entity<MartialArtsKnowledgeComponent> ent, ref KnowledgeAddedEvent args)

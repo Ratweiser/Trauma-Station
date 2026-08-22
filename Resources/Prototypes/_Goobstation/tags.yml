@@ -21,9 +21,6 @@
   id: BindSoulAction
 
 - type: Tag
-  id: Bible
-
-- type: Tag
   id: Blobbernaut
 
 - type: Tag
@@ -361,9 +358,6 @@
 
 - type: Tag
   id: MechUnGrabbable
-
-- type: Tag
-  id: MedicalPatch
 
 - type: Tag
   id: Medipen

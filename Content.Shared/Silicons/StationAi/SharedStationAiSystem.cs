@@ -1,5 +1,5 @@
 // <Trauma>
-using Content.Trauma.Common.Silicons.Borgs; // Cortex-Next
+using Content.Trauma.Common.Silicons.Borgs;
 // </Trauma>
 using Content.Shared.Access.Systems;
 using Content.Shared.ActionBlocker;
@@ -295,13 +295,13 @@ public abstract partial class SharedStationAiSystem : EntitySystem
 
         if (cardHasAi && coreHasAi)
         {
-            _popup.PopupClient(Loc.GetString("intellicard-core-occupied"), args.User, args.User, PopupType.Medium);
+            _popup.PopupEntity(Loc.GetString("intellicard-core-occupied"), args.User, args.User, PopupType.Medium);
             args.Handled = true;
             return;
         }
         if (!cardHasAi && !coreHasAi)
         {
-            _popup.PopupClient(Loc.GetString("intellicard-core-empty"), args.User, args.User, PopupType.Medium);
+            _popup.PopupEntity(Loc.GetString("intellicard-core-empty"), args.User, args.User, PopupType.Medium);
             args.Handled = true;
             return;
         }
